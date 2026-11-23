@@ -1,0 +1,1087 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
+
+<title>About Us | The Komey Foundation</title>
+
+<meta name="description" content="Discover The Komey Foundation's mission to fight hunger, restore dignity, support homeless people and empower vulnerable communities across Africa.">
+
+<style>
+:root {
+  --black:#080808;
+  --dark:#141414;
+  --gold:#e9b82e;
+  --white:#fff;
+  --grey:#666;
+  --light:#f6f6f6;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html {scroll-behavior:smooth;}
+
+body {
+  font-family:Arial,Helvetica,sans-serif;
+  color:#171717;
+  line-height:1.7;
+}
+
+a {text-decoration:none;color:inherit;}
+
+.container {
+  width:90%;
+  max-width:1150px;
+  margin:auto;
+}
+
+.gold {color:var(--gold);}
+
+.btn {
+  display:inline-block;
+  padding:13px 24px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:bold;
+  transition:.25s;
+  text-align:center;
+  border:2px solid transparent;
+}
+
+.btn-gold {
+  background:var(--gold);
+  color:#111;
+}
+
+.btn-gold:hover {
+  background:#ffd65d;
+  transform:translateY(-2px);
+}
+
+.btn-outline {
+  border-color:white;
+  color:white;
+}
+
+.btn-outline:hover {
+  background:white;
+  color:#111;
+}
+
+.btn-dark {
+  background:#111;
+  color:white;
+}
+
+/* TOP BAR */
+
+.topbar {
+  background:#050505;
+  color:#ccc;
+  padding:9px 0;
+  font-size:12px;
+}
+
+.topbar .container {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+/* HEADER */
+
+header {
+  background:#080808;
+  position:sticky;
+  top:0;
+  z-index:100;
+  border-bottom:2px solid var(--gold);
+}
+
+.nav {
+  min-height:80px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:white;
+}
+
+.brand-icon {
+  color:var(--gold);
+  font-size:38px;
+}
+
+.brand-name {
+  font-size:17px;
+  font-weight:900;
+  line-height:1.15;
+}
+
+.brand-tag {
+  color:var(--gold);
+  font-size:10px;
+  font-style:italic;
+}
+
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:19px;
+}
+
+.nav-links a {
+  color:white;
+  font-size:13px;
+  font-weight:bold;
+}
+
+.nav-links a:hover {color:var(--gold);}
+
+.nav-links .donate {
+  background:var(--gold);
+  color:#111;
+  padding:11px 19px;
+  border-radius:25px;
+}
+
+.menu-toggle {
+  display:none;
+  background:none;
+  border:1px solid #555;
+  color:white;
+  font-size:23px;
+  padding:5px 11px;
+  border-radius:5px;
+}
+
+/* HERO */
+
+.hero {
+  min-height:480px;
+  display:flex;
+  align-items:center;
+  color:white;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+}
+
+.hero-content {
+  max-width:750px;
+  padding:85px 0;
+}
+
+.eyebrow {
+  color:var(--gold);
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:15px;
+}
+
+.hero h1 {
+  font-size:clamp(42px,6vw,68px);
+  line-height:1.1;
+  margin-bottom:22px;
+}
+
+.hero p {
+  max-width:620px;
+  color:#ddd;
+  font-size:17px;
+  margin-bottom:28px;
+}
+
+.buttons {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+/* INTRODUCTION */
+
+section {padding:80px 0;}
+
+.intro-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.intro-image {
+  min-height:410px;
+  background:url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1000&q=85")
+  center/cover;
+  border-radius:12px;
+  box-shadow:12px 12px 0 var(--gold);
+}
+
+h2 {
+  font-size:clamp(30px,4vw,42px);
+  line-height:1.2;
+  margin-bottom:20px;
+}
+
+.intro-content p {
+  color:var(--grey);
+  margin-bottom:17px;
+}
+
+/* MISSION AND VISION */
+
+.dark-section {
+  background:var(--black);
+  color:white;
+}
+
+.section-heading {
+  max-width:720px;
+  text-align:center;
+  margin:0 auto 45px;
+}
+
+.section-heading h2 {color:white;}
+
+.section-heading p {color:#bbb;}
+
+.mv-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+
+.mv-card {
+  padding:35px;
+  background:#171717;
+  border:1px solid #333;
+  border-top:4px solid var(--gold);
+  border-radius:12px;
+}
+
+.mv-card .icon {
+  font-size:38px;
+  color:var(--gold);
+  margin-bottom:12px;
+}
+
+.mv-card h3 {
+  font-size:24px;
+  margin-bottom:13px;
+}
+
+.mv-card p {color:#bbb;}
+
+/* OUR BELIEFS */
+
+.values-section {background:#f6f6f6;}
+
+.values-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.value-card {
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  border:1px solid #eee;
+}
+
+.value-card .icon {
+  font-size:32px;
+  color:#c39319;
+}
+
+.value-card h3 {
+  font-size:19px;
+  margin:10px 0;
+}
+
+.value-card p {
+  color:#666;
+  font-size:14px;
+}
+
+/* AFRICA VISION */
+
+.africa-section {
+  background:#111;
+  color:white;
+}
+
+.africa-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+
+.africa-image {
+  min-height:390px;
+  border-radius:12px;
+  background:url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=85")
+  center/cover;
+}
+
+.africa-content p {
+  color:#bbb;
+  margin-bottom:18px;
+}
+
+.africa-list {
+  list-style:none;
+  margin:22px 0;
+}
+
+.africa-list li {
+  padding:10px 0;
+  border-bottom:1px solid #333;
+  color:#eee;
+}
+
+.africa-list li::before {
+  content:"✓";
+  color:var(--gold);
+  font-weight:bold;
+  margin-right:12px;
+}
+
+/* PROGRAMMES */
+
+.programme-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.programme {
+  padding:28px;
+  border:1px solid #ddd;
+  border-radius:12px;
+}
+
+.programme .icon {
+  color:#bd8c17;
+  font-size:34px;
+}
+
+.programme h3 {
+  margin:10px 0;
+  font-size:21px;
+}
+
+.programme p {
+  color:#666;
+  font-size:14px;
+  margin-bottom:15px;
+}
+
+.text-link {
+  color:#99700d;
+  font-weight:bold;
+  font-size:13px;
+}
+
+/* COMMITMENT */
+
+.commitment {
+  background:#f6f3e9;
+  text-align:center;
+}
+
+.commitment-content {
+  max-width:780px;
+  margin:auto;
+}
+
+.commitment p {
+  color:#666;
+  margin-bottom:20px;
+}
+
+/* CTA */
+
+.cta {
+  background:var(--gold);
+  text-align:center;
+  padding:70px 0;
+}
+
+.cta h2 {color:#111;}
+
+.cta p {
+  color:#292929;
+  margin-bottom:25px;
+}
+
+/* FOOTER */
+
+footer {
+  background:#050505;
+  color:white;
+  padding:55px 0 20px;
+}
+
+.footer-grid {
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr 1fr;
+  gap:30px;
+  padding-bottom:35px;
+}
+
+.footer-grid h3 {
+  color:var(--gold);
+  font-size:15px;
+  margin-bottom:15px;
+}
+
+.footer-grid p,
+.footer-grid a {
+  display:block;
+  color:#aaa;
+  font-size:13px;
+  margin-bottom:10px;
+}
+
+.footer-grid a:hover {color:var(--gold);}
+
+.footer-bottom {
+  border-top:1px solid #333;
+  padding-top:20px;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  font-size:12px;
+  color:#999;
+}
+
+/* MOBILE */
+
+@media(max-width:850px) {
+  .nav-links {gap:10px;}
+  .nav-links a {font-size:11px;}
+  .footer-grid {grid-template-columns:1fr 1fr;}
+}
+
+@media(max-width:700px) {
+  .menu-toggle {display:block;}
+
+  .nav-links {
+    display:none;
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#080808;
+    flex-direction:column;
+    align-items:stretch;
+    padding:20px 5%;
+    border-bottom:2px solid var(--gold);
+  }
+
+  .nav-links.active {display:flex;}
+
+  .nav-links a {
+    padding:12px 0;
+    font-size:14px;
+    border-bottom:1px solid #292929;
+  }
+
+  .nav-links .donate {
+    text-align:center;
+    margin-top:10px;
+  }
+
+  .intro-grid,
+  .africa-grid {
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+  .intro-image,
+  .africa-image {
+    min-height:280px;
+  }
+
+  .mv-grid,
+  .values-grid,
+  .programme-grid {
+    grid-template-columns:1fr;
+  }
+
+  section {padding:60px 0;}
+
+  .footer-grid {grid-template-columns:1fr 1fr;}
+}
+
+@media(max-width:400px) {
+  .footer-grid {grid-template-columns:1fr;}
+  .brand-name {font-size:15px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+  <div class="container">
+    <span>📍 South Africa | Africa-focused vision</span>
+    <span>Restoring Hope. Changing Lives.</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+
+<header>
+  <div class="container nav">
+
+    <a href="index.html" class="brand">
+      <span class="brand-icon">♥</span>
+      <span>
+        <span class="brand-name">THE KOMEY<br>FOUNDATION</span>
+        <br>
+        <span class="brand-tag">Restoring Hope. Changing Lives.</span>
+      </span>
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="impact.html">Our Impact</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" class="donate">♥ Donate Now</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">Who We Are</div>
+
+      <h1>
+        A Heart for Humanity.<br>
+        <span class="gold">A Vision for Africa.</span>
+      </h1>
+
+      <p>
+        We believe that every person deserves dignity,
+        compassion, nourishment and an opportunity
+        for a better tomorrow.
+      </p>
+
+      <div class="buttons">
+        <a href="#our-mission" class="btn btn-gold">
+          Discover Our Mission →
+        </a>
+
+        <a href="donate.html" class="btn btn-outline">
+          Support Our Work
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INTRODUCTION -->
+
+<section>
+  <div class="container intro-grid">
+
+    <div class="intro-image"></div>
+
+    <div class="intro-content">
+
+      <div class="eyebrow">About The Foundation</div>
+
+      <h2>
+        Humanity Should Never Be
+        <span class="gold">Forgotten.</span>
+      </h2>
+
+      <p>
+        The Komey Foundation is a humanitarian and
+        community development initiative driven by
+        compassion, service and a commitment to
+        making a meaningful difference.
+      </p>
+
+      <p>
+        Our focus is on people experiencing poverty,
+        homelessness, hunger and social vulnerability.
+        We believe that support should go beyond words.
+        It should be demonstrated through meaningful
+        action and consistent community involvement.
+      </p>
+
+      <p>
+        Starting in South Africa, our ambition is to
+        establish a growing network of community
+        support initiatives across Africa, reaching
+        people and communities who need support most.
+      </p>
+
+      <a href="programmes.html" class="btn btn-dark">
+        Explore Our Programmes →
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- MISSION AND VISION -->
+
+<section class="dark-section" id="our-mission">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Our Purpose</div>
+      <h2>What We Stand For</h2>
+      <p>
+        Our mission and vision guide every initiative,
+        partnership and community project we pursue.
+      </p>
+    </div>
+
+    <div class="mv-grid">
+
+      <div class="mv-card">
+
+        <div class="icon">♥</div>
+
+        <h3>Our Mission</h3>
+
+        <p>
+          To fight hunger, support homeless and
+          less privileged people, restore dignity
+          and improve the lives of vulnerable
+          individuals and families through
+          compassionate action, community
+          partnerships and sustainable support.
+        </p>
+
+      </div>
+
+      <div class="mv-card">
+
+        <div class="icon">✦</div>
+
+        <h3>Our Vision</h3>
+
+        <p>
+          To build an impactful African foundation
+          that reaches communities across the
+          continent, where no one is forgotten,
+          hunger is addressed, vulnerable people
+          are supported and every individual
+          has an opportunity to thrive.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- VALUES -->
+
+<section class="values-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Our Foundation</div>
+      <h2>The Values That Guide Us</h2>
+      <p>
+        Our commitment to humanity is built on
+        principles that guide how we serve,
+        collaborate and grow.
+      </p>
+    </div>
+
+    <div class="values-grid">
+
+      <div class="value-card">
+        <div class="icon">♥</div>
+        <h3>Compassion</h3>
+        <p>
+          We care about people and believe
+          everyone deserves kindness and support.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <div class="icon">✦</div>
+        <h3>Dignity</h3>
+        <p>
+          We respect every individual regardless
+          of their circumstances or background.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <div class="icon">✓</div>
+        <h3>Integrity</h3>
+        <p>
+          We are committed to honesty,
+          responsible conduct and transparency.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <div class="icon">♧</div>
+        <h3>Service</h3>
+        <p>
+          We believe in turning compassion
+          into practical and meaningful action.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <div class="icon">◎</div>
+        <h3>Accountability</h3>
+        <p>
+          We aim to manage resources responsibly
+          and report the impact of our work.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <div class="icon">✧</div>
+        <h3>Unity</h3>
+        <p>
+          We believe lasting change happens
+          when communities work together.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- AFRICAN VISION -->
+
+<section class="africa-section">
+
+  <div class="container africa-grid">
+
+    <div class="africa-image"></div>
+
+    <div class="africa-content">
+
+      <div class="eyebrow">Our African Vision</div>
+
+      <h2>
+        Starting in South Africa.
+        <span class="gold">Growing Across Africa.</span>
+      </h2>
+
+      <p>
+        Poverty and hunger do not recognise borders.
+        Our long-term ambition is to build a foundation
+        that can support vulnerable communities
+        throughout Africa.
+      </p>
+
+      <p>
+        We want to develop local partnerships,
+        mobilise volunteers, attract corporate
+        sponsorship and establish sustainable
+        humanitarian programmes in the communities
+        we serve.
+      </p>
+
+      <ul class="africa-list">
+        <li>Community feeding initiatives</li>
+        <li>Support for homeless individuals</li>
+        <li>Food assistance for vulnerable families</li>
+        <li>Education and youth empowerment</li>
+        <li>Cross-border humanitarian partnerships</li>
+      </ul>
+
+      <a href="contact.html?subject=African%20Partnership" class="btn btn-gold">
+        Partner With Our Vision →
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- OUR PROGRAMMES -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Our Areas of Focus</div>
+      <h2>How We Want to Make a Difference</h2>
+      <p>
+        We are building programmes that address
+        practical needs while creating opportunities
+        for stronger communities.
+      </p>
+    </div>
+
+    <div class="programme-grid">
+
+      <div class="programme">
+        <div class="icon">♥</div>
+        <h3>Feed a Soul</h3>
+        <p>
+          Providing free meals, food parcels and
+          community feeding support for homeless
+          people and those experiencing hunger.
+        </p>
+        <a href="programmes.html#feed-a-soul" class="text-link">
+          Learn More →
+        </a>
+      </div>
+
+      <div class="programme">
+        <div class="icon">⌂</div>
+        <h3>Family First</h3>
+        <p>
+          Supporting less privileged households
+          with essential supplies and community
+          assistance.
+        </p>
+        <a href="programmes.html#family-first" class="text-link">
+          Learn More →
+        </a>
+      </div>
+
+      <div class="programme">
+        <div class="icon">🎓</div>
+        <h3>Future Builders</h3>
+        <p>
+          Supporting children and young people
+          through educational assistance,
+          stationery and learning opportunities.
+        </p>
+        <a href="programmes.html#future-builders" class="text-link">
+          Learn More →
+        </a>
+      </div>
+
+      <div class="programme">
+        <div class="icon">✦</div>
+        <h3>Empower Tomorrow</h3>
+        <p>
+          Promoting skills development, youth
+          empowerment and opportunities that
+          help individuals build better futures.
+        </p>
+        <a href="programmes.html#empower-tomorrow" class="text-link">
+          Learn More →
+        </a>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:35px">
+      <a href="programmes.html" class="btn btn-dark">
+        View All Programmes →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMMITMENT -->
+
+<section class="commitment">
+
+  <div class="container commitment-content">
+
+    <div class="eyebrow">Our Commitment</div>
+
+    <h2>
+      We Want to Build More Than
+      <span class="gold">A Foundation.</span>
+    </h2>
+
+    <p>
+      We want to build a movement of people,
+      businesses, volunteers and partners who
+      believe that humanity deserves more.
+    </p>
+
+    <p>
+      A movement that brings food to the hungry,
+      support to the vulnerable, dignity to the
+      forgotten and hope to communities.
+    </p>
+
+    <p>
+      Our journey begins with meaningful action
+      in our communities and grows through
+      accountability, partnerships and shared purpose.
+    </p>
+
+    <a href="volunteer.html" class="btn btn-dark">
+      Become Part of Our Journey →
+    </a>
+
+  </div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>Be Part of Something That Changes Lives.</h2>
+
+    <p>
+      Your contribution, time, skills or partnership
+      can help us reach someone who needs support.
+    </p>
+
+    <div class="buttons" style="justify-content:center">
+
+      <a href="donate.html" class="btn btn-dark">
+        ♥ Donate to Our Mission
+      </a>
+
+      <a href="volunteer.html" class="btn"
+         style="border:2px solid #111;color:#111">
+        Become a Volunteer
+      </a>
+
+      <a href="contact.html" class="btn"
+         style="border:2px solid #111;color:#111">
+        Contact Us
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <a href="index.html" class="brand">
+          <span class="brand-icon">♥</span>
+          <span>
+            <span class="brand-name">THE KOMEY<br>FOUNDATION</span>
+            <br>
+            <span class="brand-tag">
+              Restoring Hope. Changing Lives.
+            </span>
+          </span>
+        </a>
+
+        <p style="margin-top:18px">
+          A vision for a more compassionate Africa,
+          where people are supported and every
+          life is treated with dignity.
+        </p>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="impact.html">Our Impact</a>
+      </div>
+
+      <div>
+        <h3>Get Involved</h3>
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html?subject=Partnership">Partnerships</a>
+        <a href="contact.html?subject=Sponsorship">Sponsorship</a>
+      </div>
+
+      <div>
+        <h3>Information</h3>
+        <a href="contact.html">Contact Us</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="donate.html">Donation Information</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>
+        © <span id="year"></span> The Komey Foundation.
+        All Rights Reserved.
+      </span>
+
+      <span>Restoring Hope. Changing Lives. ♥</span>
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("navLinks").classList.remove("active");
+  });
+});
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
