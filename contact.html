@@ -1,0 +1,911 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+
+  <title>Contact Us | The Komey Foundation</title>
+
+  <meta name="description" content="Contact The Komey Foundation about donations, volunteering, partnerships, community programmes and opportunities to support vulnerable communities across Africa.">
+
+  <link rel="canonical" href="https://komeyfoundation.org/contact.html">
+
+  <style>
+    :root {
+      --black: #080808;
+      --dark: #111111;
+      --card: #171717;
+      --gold: #d8ad55;
+      --white: #ffffff;
+      --muted: #b0b0b0;
+      --border: #303030;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      padding: 20px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #292929;
+      background: rgba(8,8,8,.97);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      color: var(--gold);
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    nav a {
+      color: #ddd;
+      font-size: 13px;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .nav-donate {
+      background: var(--gold);
+      color: #080808;
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 440px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 85px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.76), rgba(0,0,0,.92)),
+        url("https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1800&q=85");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 65px);
+      line-height: 1.1;
+      margin: 20px 0;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      color: #ddd;
+      font-size: 17px;
+      max-width: 650px;
+      margin: 0 auto 28px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: .2s;
+      cursor: pointer;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #080808;
+      border: 1px solid var(--gold);
+    }
+
+    .btn-gold:hover {
+      background: #efc875;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--gold);
+      color: var(--gold);
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: #080808;
+    }
+
+    .section {
+      padding: 80px 8%;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-label {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: clamp(29px, 4vw, 43px);
+      line-height: 1.2;
+      margin: 14px 0 18px;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 730px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .center .intro {
+      margin: auto;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 23px;
+      transition: .2s;
+    }
+
+    .contact-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+    }
+
+    .contact-number {
+      font-size: 29px;
+      font-weight: 800;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .contact-card h3 {
+      font-size: 19px;
+      margin-bottom: 9px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .contact-card a {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .dark-section {
+      background: var(--dark);
+    }
+
+    .form-layout {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .form-info h3 {
+      font-size: 21px;
+      margin: 22px 0 8px;
+    }
+
+    .form-info p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .email-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--gold);
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+
+    .form-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 30px;
+    }
+
+    .form-card h3 {
+      font-size: 23px;
+      margin-bottom: 7px;
+    }
+
+    .form-intro {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: bold;
+      margin: 16px 0 7px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      background: #0a0a0a;
+      border: 1px solid #3a3a3a;
+      border-radius: 7px;
+      color: white;
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--gold);
+    }
+
+    textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .form-card button {
+      width: 100%;
+      margin-top: 22px;
+    }
+
+    .privacy {
+      color: #999;
+      font-size: 11px;
+      margin-top: 12px;
+    }
+
+    .africa {
+      text-align: center;
+      background:
+        linear-gradient(rgba(0,0,0,.82), rgba(0,0,0,.92)),
+        url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=85");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .africa p {
+      color: var(--muted);
+      max-width: 750px;
+      margin: 0 auto 25px;
+    }
+
+    .cta {
+      background: #17140e;
+      padding: 85px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(30px, 5vw, 45px);
+    }
+
+    .cta h2 span {
+      color: var(--gold);
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 25px;
+      color: var(--muted);
+    }
+
+    footer {
+      background: #050505;
+      padding: 45px 8% 25px;
+      border-top: 1px solid #292929;
+    }
+
+    .footer-content {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      color: var(--gold);
+      margin-bottom: 13px;
+      font-size: 17px;
+    }
+
+    footer p,
+    footer a {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 9px;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .copyright {
+      max-width: 1100px;
+      margin: 35px auto 0;
+      padding-top: 22px;
+      border-top: 1px solid #292929;
+      color: #777;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    @media(max-width: 800px) {
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-content > div:first-child {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media(max-width: 520px) {
+      header {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 16px 5%;
+      }
+
+      .logo {
+        font-size: 16px;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+      }
+
+      nav a {
+        font-size: 11px;
+      }
+
+      .section {
+        padding: 65px 6%;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-card {
+        padding: 22px 17px;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="https://komeyfoundation.org/" class="logo">
+    KOMEY FOUNDATION
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programmes.html">Programmes</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a href="contact.html">Contact</a>
+    <a href="donate.html" class="nav-donate">Donate</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+
+    <div class="eyebrow">We would love to hear from you</div>
+
+    <h1>
+      Let's create<br>
+      <span>change together.</span>
+    </h1>
+
+    <p>
+      Whether you want to support our programmes, volunteer,
+      partner with us or learn more about our mission,
+      we welcome your enquiry.
+    </p>
+
+    <div class="buttons">
+      <a href="#contact-form" class="btn btn-gold">
+        Send An Enquiry
+      </a>
+
+      <a href="donate.html" class="btn btn-outline">
+        Support Our Mission
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT OPTIONS -->
+<section class="section">
+  <div class="section-inner center">
+
+    <div class="section-label">Get in touch</div>
+
+    <h2>How can we help you?</h2>
+
+    <p class="intro">
+      We welcome enquiries from individuals, donors, volunteers,
+      businesses, community organisations and potential partners
+      across Africa and beyond.
+    </p>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <div class="contact-number">01</div>
+        <h3>General Enquiries</h3>
+        <p>
+          Questions about the foundation, our mission,
+          activities and community initiatives.
+        </p>
+        <a href="mailto:info@komeyfoundation.org?subject=General%20Enquiry">
+          Email Our Team →
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-number">02</div>
+        <h3>Donations & Support</h3>
+        <p>
+          Learn how your contribution can support community
+          feeding and vulnerable people.
+        </p>
+        <a href="donate.html">Make A Donation →</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-number">03</div>
+        <h3>Volunteer</h3>
+        <p>
+          Interested in giving your time, skills and energy
+          to support our programmes?
+        </p>
+        <a href="volunteer.html">Join Our Volunteer Network →</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-number">04</div>
+        <h3>Corporate Partnerships</h3>
+        <p>
+          Businesses and organisations interested in supporting
+          our mission through partnerships and sponsorships.
+        </p>
+        <a href="mailto:info@komeyfoundation.org?subject=Corporate%20Partnership%20Enquiry">
+          Discuss A Partnership →
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-number">05</div>
+        <h3>Community Initiatives</h3>
+        <p>
+          Community leaders and organisations can contact us
+          about local needs and potential collaboration.
+        </p>
+        <a href="mailto:info@komeyfoundation.org?subject=Community%20Initiative%20Enquiry">
+          Connect With Us →
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-number">06</div>
+        <h3>Africa-Wide Collaboration</h3>
+        <p>
+          Interested in helping us grow our network
+          and programmes across African countries?
+        </p>
+        <a href="mailto:info@komeyfoundation.org?subject=Africa%20Collaboration%20Enquiry">
+          Explore Collaboration →
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="section dark-section" id="contact-form">
+
+  <div class="section-inner form-layout">
+
+    <div class="form-info">
+
+      <div class="section-label">Contact the foundation</div>
+
+      <h2>Start a conversation with us.</h2>
+
+      <p class="intro">
+        Tell us what you need or how you would like to get involved.
+        Our team welcomes enquiries about donations, volunteering,
+        partnerships and community support.
+      </p>
+
+      <h3>Email</h3>
+      <p>For all general enquiries:</p>
+
+      <a class="email-link" href="mailto:info@komeyfoundation.org">
+        info@komeyfoundation.org
+      </a>
+
+      <h3>Website</h3>
+      <p>Visit our official website:</p>
+
+      <a class="email-link" href="https://komeyfoundation.org/">
+        komeyfoundation.org
+      </a>
+
+      <h3>Our Vision</h3>
+      <p>
+        To build a foundation that supports vulnerable communities
+        and creates meaningful impact across Africa.
+      </p>
+
+      <br>
+
+      <a href="programmes.html" class="btn btn-outline">
+        Explore Our Programmes
+      </a>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="form-card">
+
+      <h3>Send us a message</h3>
+
+      <p class="form-intro">
+        Complete the form and your email application will open
+        with your enquiry details.
+      </p>
+
+      <form id="contactForm">
+
+        <label for="name">Full name</label>
+        <input
+          type="text"
+          id="name"
+          maxlength="100"
+          autocomplete="name"
+          placeholder="Enter your full name"
+          required
+        >
+
+        <label for="email">Email address</label>
+        <input
+          type="email"
+          id="email"
+          maxlength="254"
+          autocomplete="email"
+          placeholder="Enter your email address"
+          required
+        >
+
+        <label for="country">Country</label>
+        <select id="country" required>
+          <option value="">Select your country</option>
+          <option>South Africa</option>
+          <option>Ghana</option>
+          <option>Nigeria</option>
+          <option>Kenya</option>
+          <option>Uganda</option>
+          <option>Tanzania</option>
+          <option>Rwanda</option>
+          <option>Zambia</option>
+          <option>Zimbabwe</option>
+          <option>Botswana</option>
+          <option>Namibia</option>
+          <option>Lesotho</option>
+          <option>Eswatini</option>
+          <option>Malawi</option>
+          <option>Mozambique</option>
+          <option>Other African country</option>
+          <option>Outside Africa</option>
+        </select>
+
+        <label for="enquiry">What is your enquiry about?</label>
+        <select id="enquiry" required>
+          <option value="">Choose enquiry type</option>
+          <option>General Enquiry</option>
+          <option>Donation Enquiry</option>
+          <option>Volunteer Application</option>
+          <option>Corporate Partnership</option>
+          <option>Sponsorship Opportunity</option>
+          <option>Community Initiative</option>
+          <option>Africa-Wide Collaboration</option>
+          <option>Media & Press</option>
+          <option>Other</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          maxlength="150"
+          placeholder="Enter your subject"
+          required
+        >
+
+        <label for="message">Your message</label>
+        <textarea
+          id="message"
+          maxlength="3000"
+          placeholder="Tell us how we can help..."
+          required
+        ></textarea>
+
+        <button type="submit" class="btn btn-gold">
+          Send Your Enquiry
+        </button>
+
+        <p class="privacy">
+          By submitting, you agree that the foundation may use
+          the information provided to respond to your enquiry.
+          Do not include sensitive personal information.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- AFRICA SECTION -->
+<section class="section africa">
+  <div class="section-inner">
+
+    <div class="section-label">One mission across Africa</div>
+
+    <h2>Our ambition goes beyond borders.</h2>
+
+    <p>
+      We want to build meaningful relationships with people,
+      businesses, organisations and communities across Africa.
+      If you believe in our mission, we would love to hear from you.
+    </p>
+
+    <a href="mailto:info@komeyfoundation.org?subject=Africa%20Partnership%20Enquiry"
+       class="btn btn-gold">
+      Become An Africa Partner
+    </a>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta">
+  <div class="section-inner">
+
+    <div class="section-label">Together we can do more</div>
+
+    <h2>Let's make a difference <span>together.</span></h2>
+
+    <p>
+      Every connection can create an opportunity to help someone.
+      Join The Komey Foundation in supporting vulnerable people
+      and building stronger communities.
+    </p>
+
+    <div class="buttons">
+      <a href="donate.html" class="btn btn-gold">
+        Donate Today
+      </a>
+
+      <a href="volunteer.html" class="btn btn-outline">
+        Become A Volunteer
+      </a>
+
+      <a href="programmes.html" class="btn btn-outline">
+        View Programmes
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="footer-content">
+
+    <div>
+      <h3>THE KOMEY FOUNDATION</h3>
+
+      <p>
+        Working towards a future where fewer people go hungry,
+        vulnerable communities receive support and everyone
+        has an opportunity to thrive.
+      </p>
+
+      <p style="margin-top:12px;">
+        <a href="https://komeyfoundation.org/">
+          komeyfoundation.org
+        </a>
+      </p>
+    </div>
+
+    <div>
+      <h3>Explore</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h3>Get Involved</h3>
+      <a href="donate.html">Make A Donation</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="mailto:info@komeyfoundation.org?subject=Partnership%20Enquiry">
+        Partner With Us
+      </a>
+      <a href="mailto:info@komeyfoundation.org">
+        Email Us
+      </a>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © <span id="year"></span> The Komey Foundation. All rights reserved.
+  </div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+  // Contact form email submission.
+  // This opens the visitor's email application.
+  // It does not automatically store enquiries in a database.
+
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const country = document.getElementById("country").value;
+    const enquiry = document.getElementById("enquiry").value;
+    const subjectText = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const subject = encodeURIComponent(
+      enquiry + " - " + subjectText
+    );
+
+    const body = encodeURIComponent(
+      "THE KOMEY FOUNDATION - CONTACT ENQUIRY\n\n" +
+      "Name: " + name + "\n" +
+      "Email: " + email + "\n" +
+      "Country: " + country + "\n" +
+      "Enquiry Type: " + enquiry + "\n" +
+      "Subject: " + subjectText + "\n\n" +
+      "Message:\n" + message
+    );
+
+    window.location.href =
+      "mailto:info@komeyfoundation.org?subject=" +
+      subject + "&body=" + body;
+
+  });
+</script>
+
+</body>
+</html>
