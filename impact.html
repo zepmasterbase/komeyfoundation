@@ -1,0 +1,1049 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+
+  <title>Our Impact | The Komey Foundation</title>
+
+  <meta name="description" content="Discover the impact The Komey Foundation wants to create through community feeding, family support, skills development, youth empowerment and outreach across Africa.">
+
+  <link rel="canonical" href="https://komeyfoundation.org/impact.html">
+
+  <style>
+    :root {
+      --black: #080808;
+      --dark: #111111;
+      --card: #171717;
+      --gold: #d8ad55;
+      --white: #ffffff;
+      --muted: #b0b0b0;
+      --border: #303030;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      padding: 19px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 1px solid #292929;
+      background: rgba(8,8,8,.97);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      color: var(--gold);
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+    }
+
+    nav a {
+      color: #ddd;
+      font-size: 13px;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .nav-donate {
+      background: var(--gold);
+      color: #080808;
+      padding: 10px 17px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 680px;
+      display: flex;
+      align-items: end;
+      padding: 90px 8%;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.88), rgba(0,0,0,.22)),
+        linear-gradient(0deg, rgba(0,0,0,.8), transparent 65%),
+        url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=2000&q=90");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(44px, 7vw, 82px);
+      line-height: 1.04;
+      margin: 20px 0;
+      letter-spacing: -2px;
+    }
+
+    h1 span,
+    h2 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #e0e0e0;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 5px;
+      font-size: 13px;
+      font-weight: bold;
+      transition: .25s;
+      text-align: center;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #080808;
+      border: 1px solid var(--gold);
+    }
+
+    .btn-gold:hover {
+      background: #efc875;
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      color: var(--gold);
+      border: 1px solid var(--gold);
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: #080808;
+    }
+
+    .section {
+      padding: 90px 8%;
+    }
+
+    .inner {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-label {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.15;
+      margin: 14px 0;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .manifesto {
+      background: var(--dark);
+      text-align: center;
+    }
+
+    .manifesto p {
+      max-width: 850px;
+      margin: 20px auto 0;
+      color: #c7c7c7;
+      font-size: 18px;
+    }
+
+    .manifesto h2 {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .impact-card {
+      position: relative;
+      min-height: 420px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #181818;
+      border: 1px solid #292929;
+    }
+
+    .impact-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+      transition: transform .7s ease;
+    }
+
+    .impact-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .impact-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        0deg,
+        rgba(0,0,0,.95) 0%,
+        rgba(0,0,0,.45) 48%,
+        rgba(0,0,0,.05) 100%
+      );
+    }
+
+    .impact-content {
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 32px;
+    }
+
+    .impact-number {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    .impact-content h3 {
+      font-size: clamp(24px, 3vw, 34px);
+      margin: 9px 0;
+    }
+
+    .impact-content p {
+      color: #ddd;
+      font-size: 14px;
+      max-width: 500px;
+      margin-bottom: 15px;
+    }
+
+    .impact-content a {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .impact-content a:hover {
+      text-decoration: underline;
+    }
+
+    .full-image {
+      min-height: 570px;
+      display: flex;
+      align-items: center;
+      padding: 70px 8%;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,.18)),
+        url("https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=2000&q=90");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .full-image-content {
+      max-width: 650px;
+    }
+
+    .full-image-content p {
+      color: #ddd;
+      font-size: 16px;
+      margin: 18px 0 25px;
+    }
+
+    .quote-section {
+      background: #15120c;
+      text-align: center;
+    }
+
+    .quote-section blockquote {
+      max-width: 900px;
+      margin: auto;
+      font-size: clamp(27px, 4vw, 43px);
+      font-weight: bold;
+      line-height: 1.3;
+    }
+
+    .quote-section blockquote span {
+      color: var(--gold);
+    }
+
+    .quote-section p {
+      color: var(--muted);
+      margin-top: 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 9px;
+      background: var(--card);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 290px;
+      object-fit: cover;
+      display: block;
+      transition: .5s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-caption {
+      padding: 15px;
+    }
+
+    .gallery-caption h3 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .gallery-caption p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .step {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 27px;
+      border-radius: 10px;
+    }
+
+    .step-number {
+      color: var(--gold);
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .step h3 {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .cta {
+      padding: 100px 8%;
+      text-align: center;
+      background:
+        linear-gradient(rgba(0,0,0,.84), rgba(0,0,0,.91)),
+        url("https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1800&q=90");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .cta h2 {
+      max-width: 800px;
+      margin: 0 auto 18px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      color: #ccc;
+      margin: 0 auto 28px;
+    }
+
+    footer {
+      padding: 45px 8% 25px;
+      background: #050505;
+      border-top: 1px solid #292929;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      color: var(--gold);
+      font-size: 17px;
+      margin-bottom: 14px;
+    }
+
+    footer p,
+    footer a {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 9px;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .copyright {
+      max-width: 1200px;
+      margin: 35px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #292929;
+      color: #777;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    @media(max-width: 800px) {
+      header {
+        flex-wrap: wrap;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+      }
+
+      nav a {
+        font-size: 11px;
+      }
+
+      .hero {
+        min-height: 590px;
+      }
+
+      .impact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width: 520px) {
+      .section {
+        padding: 65px 6%;
+      }
+
+      .hero {
+        padding: 70px 6%;
+      }
+
+      .impact-card,
+      .impact-card img {
+        min-height: 370px;
+      }
+
+      .impact-content {
+        padding: 23px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item img {
+        height: 260px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+      }
+
+      .footer-grid > div:first-child {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="https://komeyfoundation.org/" class="logo">
+    KOMEY FOUNDATION
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programmes.html">Programmes</a>
+    <a href="impact.html">Impact</a>
+    <a href="contact.html">Contact</a>
+    <a href="donate.html" class="nav-donate">Donate</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+
+    <div class="eyebrow">The change we want to create</div>
+
+    <h1>
+      Hope should be<br>
+      <span>something everyone can feel.</span>
+    </h1>
+
+    <p>
+      From a meal for someone who is hungry to skills that
+      open doors for a young person, we believe meaningful
+      change begins when people come together to help.
+    </p>
+
+    <div class="buttons">
+      <a href="donate.html" class="btn btn-gold">
+        Help Make An Impact
+      </a>
+
+      <a href="#our-impact" class="btn btn-outline">
+        Explore Our Vision
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="section manifesto">
+  <div class="inner">
+
+    <div class="section-label">Beyond words. Towards action.</div>
+
+    <h2>
+      We want to build a future where
+      <span>no one is forgotten.</span>
+    </h2>
+
+    <p>
+      We envision communities where people experiencing
+      homelessness can receive support, vulnerable families
+      can find relief, children can feel cared for and young
+      people can develop skills that help them build better
+      futures.
+    </p>
+
+  </div>
+</section>
+
+<!-- IMPACT AREAS -->
+<section class="section" id="our-impact">
+  <div class="inner">
+
+    <div class="section-heading">
+      <div class="section-label">Our vision for impact</div>
+
+      <h2>Six ways we want to <span>change lives.</span></h2>
+
+      <p>
+        These are the areas we aim to support through future
+        programmes, community partnerships, volunteers and
+        responsible fundraising.
+      </p>
+    </div>
+
+    <div class="impact-grid">
+
+      <!-- FEEDING -->
+      <article class="impact-card">
+        <img
+          src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1100&q=85"
+          alt="Community food support and meal distribution"
+          loading="lazy"
+        >
+
+        <div class="impact-content">
+          <div class="impact-number">01 / FIGHT HUNGER</div>
+          <h3>A meal can restore hope.</h3>
+
+          <p>
+            We want to support community feeding initiatives
+            that provide meals to homeless people and families
+            experiencing food insecurity.
+          </p>
+
+          <a href="programmes.html">Explore Feeding Programmes →</a>
+        </div>
+      </article>
+
+      <!-- HOMELESSNESS -->
+      <article class="impact-card">
+        <img
+          src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1100&q=85"
+          alt="People working together to support vulnerable communities"
+          loading="lazy"
+        >
+
+        <div class="impact-content">
+          <div class="impact-number">02 / RESTORE DIGNITY</div>
+          <h3>Everyone deserves to be seen.</h3>
+
+          <p>
+            We want to help connect people experiencing
+            homelessness with essential support, care,
+            dignity and community resources.
+          </p>
+
+          <a href="programmes.html">Explore Homeless Support →</a>
+        </div>
+      </article>
+
+      <!-- FAMILIES -->
+      <article class="impact-card">
+        <img
+          src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1100&q=85"
+          alt="Children and families in a community setting"
+          loading="lazy"
+        >
+
+        <div class="impact-content">
+          <div class="impact-number">03 / SUPPORT FAMILIES</div>
+          <h3>Stronger families. Stronger communities.</h3>
+
+          <p>
+            We aim to support vulnerable households with
+            essential supplies, community assistance and
+            connections to appropriate support services.
+          </p>
+
+          <a href="programmes.html">Explore Family Support →</a>
+        </div>
+      </article>
+
+      <!-- CHILDREN -->
+      <article class="impact-card">
+        <img
+          src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1100&q=85"
+          alt="Children learning and enjoying their childhood"
+          loading="lazy"
+        >
+
+        <div class="impact-content">
+          <div class="impact-number">04 / PROTECT POTENTIAL</div>
+          <h3>Every child deserves a chance.</h3>
+
+          <p>
+            We want to encourage environments where children
+            can access care, learning resources, encouragement
+            and opportunities to thrive.
+          </p>
+
+          <a href="programmes.html">Explore Child Support →</a>
+        </div>
+      </article>
+
+      <!-- SKILLS -->
+      <article class="impact-card">
+        <img
+          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85"
+          alt="Young people collaborating and developing practical skills"
+          loading="lazy"
+        >
+
+        <div class="impact-content">
+          <div class="impact-number">05 / DEVELOP SKILLS</div>
+          <h3>Skills can change a future.</h3>
+
+          <p>
+            We want to create pathways to practical skills,
+            mentorship, digital learning and personal
+            development for young people.
+          </p>
+
+          <a href="programmes.html">Explore Youth Development →</a>
+        </div>
+      </article>
+
+      <!-- COMMUNITY -->
+      <article class="impact-card">
+        <img
+          src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1100&q=85"
+          alt="Volunteers collaborating on community development"
+          loading="lazy"
+        >
+
+        <div class="impact-content">
+          <div class="impact-number">06 / BUILD COMMUNITY</div>
+          <h3>Change is stronger together.</h3>
+
+          <p>
+            We want to connect volunteers, businesses,
+            organisations and local leaders to create
+            meaningful community support networks.
+          </p>
+
+          <a href="volunteer.html">Become Part Of The Movement →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CHILDREN AND FUTURE -->
+<section class="full-image">
+  <div class="full-image-content">
+
+    <div class="section-label">Investing in tomorrow</div>
+
+    <h2>
+      The future begins with the opportunities
+      we create <span>today.</span>
+    </h2>
+
+    <p>
+      A child deserves the chance to learn. A young person
+      deserves the opportunity to develop skills. A family
+      deserves the support to move forward.
+      Our vision is to help make these possibilities real.
+    </p>
+
+    <a href="volunteer.html" class="btn btn-gold">
+      Help Us Make A Difference
+    </a>
+
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="section quote-section">
+  <div class="inner">
+
+    <blockquote>
+      "We do not want to simply give people a reason to
+      <span>survive.</span> We want to help create opportunities
+      for them to <span>thrive.</span>"
+    </blockquote>
+
+    <p>The vision behind The Komey Foundation</p>
+
+  </div>
+</section>
+
+<!-- CINEMATIC PICTURE LIBRARY -->
+<section class="section">
+  <div class="inner">
+
+    <div class="section-heading">
+      <div class="section-label">Our picture library</div>
+
+      <h2>A picture of the Africa <span>we want to build.</span></h2>
+
+      <p>
+        A visual expression of our aspirations: compassion,
+        dignity, opportunity, skills, stronger families and
+        communities supporting one another.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=85"
+          alt="Food and community assistance"
+          loading="lazy"
+        >
+        <div class="gallery-caption">
+          <h3>Food With Dignity</h3>
+          <p>Working towards a future with less hunger.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=85"
+          alt="Children and childhood development"
+          loading="lazy"
+        >
+        <div class="gallery-caption">
+          <h3>Childhood & Hope</h3>
+          <p>Giving children room to dream and grow.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=85"
+          alt="Teamwork and skills development"
+          loading="lazy"
+        >
+        <div class="gallery-caption">
+          <h3>Skills & Opportunity</h3>
+          <p>Opening pathways to a better future.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=85"
+          alt="Community volunteers working together"
+          loading="lazy"
+        >
+        <div class="gallery-caption">
+          <h3>Community Action</h3>
+          <p>People creating change together.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=85"
+          alt="Children and community support"
+          loading="lazy"
+        >
+        <div class="gallery-caption">
+          <h3>Family & Care</h3>
+          <p>Supporting families through difficult times.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=85"
+          alt="People joining hands to support others"
+          loading="lazy"
+        >
+        <div class="gallery-caption">
+          <h3>Hope Without Borders</h3>
+          <p>Building a stronger network of support.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- HOW WE WANT TO WORK -->
+<section class="section" style="background:#111;">
+  <div class="inner">
+
+    <div class="section-heading">
+      <div class="section-label">Turning vision into action</div>
+
+      <h2>How we want to <span>make impact.</span></h2>
+
+      <p>
+        Our approach is built around responsible action,
+        community involvement and partnerships that help
+        turn good intentions into measurable results.
+      </p>
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <h3>Understand The Need</h3>
+        <p>
+          Listen to communities, identify real challenges
+          and work with local people to understand where
+          support is most needed.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <h3>Bring People Together</h3>
+        <p>
+          Build relationships with volunteers, donors,
+          businesses, community organisations and
+          potential programme partners.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <h3>Deliver & Measure</h3>
+        <p>
+          Develop practical initiatives, document activities
+          and communicate honestly about the progress
+          and impact achieved.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta">
+  <div class="inner">
+
+    <div class="section-label">Be part of the change</div>
+
+    <h2>
+      The Africa we want to see starts with
+      <span>what we do together.</span>
+    </h2>
+
+    <p>
+      Help us work towards a future where hunger is reduced,
+      vulnerable people receive support, young people gain
+      skills and communities have more opportunities.
+    </p>
+
+    <div class="buttons" style="justify-content:center;">
+
+      <a href="donate.html" class="btn btn-gold">
+        Support Our Mission
+      </a>
+
+      <a href="volunteer.html" class="btn btn-outline">
+        Become A Volunteer
+      </a>
+
+      <a href="contact.html" class="btn btn-outline">
+        Partner With Us
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+      <h3>THE KOMEY FOUNDATION</h3>
+
+      <p>
+        Working towards a future where fewer people go hungry,
+        vulnerable communities receive support and everyone
+        has an opportunity to thrive.
+      </p>
+
+      <p style="margin-top:12px;">
+        <a href="https://komeyfoundation.org/">
+          komeyfoundation.org
+        </a>
+      </p>
+    </div>
+
+    <div>
+      <h3>Explore</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programmes.html">Programmes</a>
+      <a href="impact.html">Our Impact</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h3>Get Involved</h3>
+      <a href="donate.html">Donate</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="contact.html">Partnerships</a>
+      <a href="mailto:info@komeyfoundation.org">Email Us</a>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © <span id="year"></span> The Komey Foundation. All rights reserved.
+  </div>
+
+</footer>
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
